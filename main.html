@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <title>Решаем задачи</title>
     <style>
-        p {
+        p, div, input{
           font-family: sans-serif;
           font-size: 30px;
+        }
+
+        button{
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        button{
+            padding: 3px;
+            border-radius: 20px;
         }
 
         #root {
@@ -14,17 +24,48 @@
             padding: 40px;
             border-radius: 20px;
             box-sizing: border-box;
+            display: flex;
+        }
+        #root div:first-child {
+            width: 50%;
+            height: 100%;
+
+        }
+
+        #root div:last-child {
+            width: 50%;
+            height: max-content;
+        }
+
+        #root div input {
+            width: 20px;
         }
     </style>
 </head>
 <body>
 
 <div id="root">
-    <p class="inside"></p>
-    <p class="inside"></p>
-    <p class="inside"></p>
-    <p class="inside"></p>
-    <p class="inside"></p>
+    <div>
+        <p class="inside"></p>
+        <p class="inside"></p>
+        <p class="inside"></p>
+        <p class="inside"></p>
+        <p class="inside"></p>
+    </div>
+
+    <div>
+        <input class="mainInp" type="text" name="" id="nullzn">
+        <input class="mainInp" type="text" name="" id="a_bezzn">
+        x^2
+        <input class="mainInp" type="text" name="" id="fzn">
+        <input class="mainInp" type="text" name="" id="b_bezzn">
+        x
+        <input class="mainInp" type="text" name="" id="szn">
+        <input class="mainInp" type="text" name="" id="c_bezzn">
+        = 0
+
+        <button id="power_btn" type="submit">Решить</button>
+    </div>
 </div>
 <script src="main.js"></script>
 </body>
