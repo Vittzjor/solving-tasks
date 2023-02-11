@@ -35,10 +35,11 @@
         #root div:last-child {
             width: 50%;
             height: max-content;
+
         }
 
         #root div input {
-            width: 20px;
+            width: 16px;
         }
     </style>
 </head>
@@ -54,14 +55,14 @@
     </div>
 
     <div>
-        <input class="mainInp" type="text" name="" id="nullzn">
-        <input class="mainInp" type="text" name="" id="a_bezzn">
+        <input oninput="this.style.width = `${this.value.length*17}px` " class="mainInp" type="text" name="" id="nullzn">
+        <input oninput="this.style.width = `${this.value.length*17}px` " class="mainInp" type="text" name="" id="a_bezzn">
         x^2
-        <input class="mainInp" type="text" name="" id="fzn">
-        <input class="mainInp" type="text" name="" id="b_bezzn">
+        <input oninput="this.style.width = `${this.value.length*17}px` " class="mainInp" type="text" name="" id="fzn">
+        <input oninput="this.style.width = `${this.value.length*17}px` " class="mainInp" type="text" name="" id="b_bezzn">
         x
-        <input class="mainInp" type="text" name="" id="szn">
-        <input class="mainInp" type="text" name="" id="c_bezzn">
+        <input oninput="this.style.width = `${this.value.length*17}px` " class="mainInp" type="text" name="" id="szn">
+        <input oninput="this.style.width = `${this.value.length*17}px` " class="mainInp" type="text" name="" id="c_bezzn">
         = 0
 
         <button id="power_btn" type="submit">Решить</button>
