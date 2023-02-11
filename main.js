@@ -9,11 +9,11 @@ const f = (nullzn,a_bezzn, fzn, b_bezzn, szn, c_bezzn) => {
     if (desc < 0){
         i = [
             `D = b^2 - 4ac`,
-            `D = ${b_bezzn}^2 - 4 * ${a_bezzn} * ${c_bezzn} = ${desc}  (корней нет)`,
+            `D = ${b}^2 - 4 * ${a} * ${c} = ${desc}  (корней нет)`,
         ]
         return [
             `D = b^2 - 4ac`,
-            `D = ${b_bezzn}^2 - 4 * ${a_bezzn} * ${c_bezzn} = ${desc}  (корней нет)`,
+            `D = ${b}^2 - 4 * ${a} * ${c} = ${desc}  (корней нет)`,
            ]
     }
 
@@ -22,10 +22,10 @@ const f = (nullzn,a_bezzn, fzn, b_bezzn, szn, c_bezzn) => {
         console.log(descTest);
         i =
             (`D = b^2 - 4ac,
-            D = ${b_bezzn}^2 - 4 * ${a_bezzn} * ${c_bezzn} = ${desc}  (два корня),
+            D = ${b}^2 - 4 * ${a} * ${c} = ${desc}  (два корня),
             x1&2 = (-b +- √D) / 2 * a,
-            x1 = (-${b_bezzn} + √${desc}) / 2 * ${a_bezzn} = (-${b_bezzn} + √${desc}) / ${eval(2 * a)},
-            x2 = (-${b_bezzn} - √${desc}) / 2 * ${a_bezzn} = (-${b_bezzn} - √${desc}) / ${eval(2 * a)}`).split(',')
+            x1 = (-${b} + √${desc}) / 2 * ${a} = (-${b} + √${desc}) / ${eval(2 * a)},
+            x2 = (-${b} - √${desc}) / 2 * ${a} = (-${b} - √${desc}) / ${eval(2 * a)}`).split(',')
         return
     }
 
@@ -40,15 +40,15 @@ const f = (nullzn,a_bezzn, fzn, b_bezzn, szn, c_bezzn) => {
         }
         i = [
             `D = b^2 - 4ac`,
-            `D = ${b_bezzn}^2 - 4 * ${a_bezzn} * ${c_bezzn} = ${desc}  (один корень)`,
+            `D = ${b}^2 - 4 * ${a} * ${c} = ${desc}  (один корень)`,
             `x1,2 = (-b +- √D) / 2 * a`,
-            `x1 = (-${b_bezzn} + ${desc**0.5}) / 2 * ${a_bezzn} = ${x1}`,
+            `x1 = (-${b} + ${desc**0.5}) / 2 * ${a} = ${x1}`,
             `x2 = ${x1}  (два корня как один)`]
         return [
             `D = b^2 - 4ac`,
-            `D = ${b_bezzn}^2 - 4 * ${a_bezzn} * ${c_bezzn} = ${desc}  (один корень)`,
+            `D = ${b}^2 - 4 * ${a} * ${c} = ${desc}  (один корень)`,
             `x1,2 = (-b +- √D) / 2 * a`,
-            `x1 = (-${b_bezzn} + ${desc**0.5}) / 2 * ${a_bezzn} = ${x1}`,
+            `x1 = (-${b} + ${desc**0.5}) / 2 * ${a} = ${x1}`,
             `x2 = ${x1}  (два корня как один)`]
 
     }
@@ -70,16 +70,16 @@ const f = (nullzn,a_bezzn, fzn, b_bezzn, szn, c_bezzn) => {
     }
     i =
         (`D = b^2 - 4ac,
-        D = ${b_bezzn}^2 - 4 * ${a_bezzn} * ${c_bezzn} = ${desc}  (два корня),
+        D = ${b}^2 - 4 * ${a} * ${c} = ${desc}  (два корня),
         x1&2 = (-b +- √D) / 2 * a,
-        x1 = (-${b_bezzn} + ${desc**0.5}) / 2 * ${a_bezzn} = ${x1},
-        x2 = (-${b_bezzn} - ${desc**0.5}) / 2 * ${a_bezzn} = ${x2}`).split(',')
+        x1 = (-${b} + ${desc**0.5}) / 2 * ${a} = ${x1},
+        x2 = (-${b} - ${desc**0.5}) / 2 * ${a} = ${x2}`).split(',')
     return [
         `D = b^2 - 4ac`,
         `D = ${b}^2 - 4 * ${a} * ${c} = ${desc} (два корня)`,
         `x1,2 = (-b +- √D) / 2 * a`,
-        `x1 = (-${b_bezzn} + ${desc**0.5}) / 2 * ${a} = ${x1}`,
-        `x2 = (-${b_bezzn} - ${desc**0.5}) / 2 * ${a} = ${x2}`]
+        `x1 = (-${b} + ${desc**0.5}) / 2 * ${a} = ${x1}`,
+        `x2 = (-${b} - ${desc**0.5}) / 2 * ${a} = ${x2}`]
 
 }
 
