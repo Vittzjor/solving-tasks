@@ -1,7 +1,6 @@
-# solving-tasks
+# <center>solving-tasks</center>
 
 ## Run Code
-```bash
-Run a main.html file
-// запустите main.hmlt файл
+```
+запустите main.hmlt файл
 ```
